@@ -1,0 +1,50 @@
+page-home {
+  .background-content {
+    background-color: darkorchid;
+  }
+
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .text-content {
+    font-size: 25px;
+    color: white;
+  }
+
+  .button-content-start {
+    height: 70px;
+    font-size: 18px;
+    background: mediumseagreen;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  .button-content-start.activated {
+    background: mediumseagreen;
+    box-shadow: none;
+  }
+
+  .button-content-end {
+    height: 70px;
+    font-size: 18px;
+    background: darkmagenta;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  .button-content-end.activated {
+    background: darkmagenta;
+    box-shadow: none;
+
+  }
+
+  .icon-content {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+
+}

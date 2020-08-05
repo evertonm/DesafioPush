@@ -1,0 +1,36 @@
+<ion-content padding class="background-content">
+  <div class="image-container">
+    <img src="assets/imgs/course.png" class="img-course" />
+  </div>
+
+  <div class="container-content">
+    <span class="text-content">Seja bem-vindo</span>
+
+    <ng-template [ngIf]="!isRegister" [ngIfElse]="isStudying">
+      <p class="text-content">Inscreva-se no curso</p>
+      <button
+        ion-button
+        full
+        class="button-content-start"
+        (click)="register();"
+      >
+      <ion-icon name="book" class="icon-content"></ion-icon>
+        Inscrever-se
+      </button>
+    </ng-template>
+
+    <ng-template #isStudying>
+      <p class="text-content">Conclua o curso</p>
+      <button
+        ion-button
+        full
+        class="button-content-end"
+        (click)="finish();"
+      >
+      <ion-icon name="school" class="icon-content"></ion-icon>
+
+        Finalizar Curso
+      </button>
+    </ng-template>
+  </div>
+</ion-content>
