@@ -32,13 +32,6 @@ export class MyApp {
           },
         };
 
-        push.hasPermission().then((res: any) => {
-          if (res.isEnabled) {
-            alert("tem permissao");
-          } else {
-            alert("nao tem permissao");
-          }
-        });
         const pushObject: PushObject = push.init(options);
         pushObject.on("notification").subscribe((notification: any) => {
           console.log(notification);
@@ -55,7 +48,6 @@ export class MyApp {
         });
 
         pushObject.on("error").subscribe((error) => {
-          alert("deu erro");
           console.error("Error with Push plugin", error);
         });
       }
